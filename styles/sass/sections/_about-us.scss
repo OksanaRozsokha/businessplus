@@ -1,0 +1,28 @@
+.about-us {
+  padding: 80px 0;
+  .container {
+    @include display-flex;
+    @include justify-content(space-between);
+    @include align-items(center);
+    @media (max-width: 515px) {
+      @include  flex-direction(column);
+    }
+
+  }
+  .head {
+    width: 40%;
+    @media (max-width: 515px) {
+      width: 100%;
+     margin-bottom: 20px;
+    }
+  }
+  .content {
+    width: 60%;
+    @media (max-width: 515px) {
+      width: 100%;
+    }
+  }
+  .btn {
+    margin-top: 20px;
+  }
+}

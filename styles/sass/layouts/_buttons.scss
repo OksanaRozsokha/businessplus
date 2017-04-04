@@ -1,0 +1,9 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  @include raleway(13px, 700);
+  color: $brand-color;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border: 2px solid $brand-color;
+}

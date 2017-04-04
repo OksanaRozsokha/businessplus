@@ -1,0 +1,32 @@
+.title {
+  @include raleway(30px, 800);
+  color: $primary-color;
+  text-transform: uppercase;
+
+  &-white {
+    color: $tertiary-color;
+  }
+
+  &-small {
+    font-size: 16px;
+  }
+}
+
+.text {
+  @include open-sans(14px, 400);
+  color: $primary-color;
+  line-height: 28px;
+
+  &-italic {
+    @include lora(16px, 400)
+  }
+
+  &-white {
+    color: $tertiary-color;
+  }
+}
+p {
+  @include open-sans(14px, 400);
+  color: $primary-color;
+  line-height: 28px;
+}

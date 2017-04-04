@@ -1,0 +1,57 @@
+.news {
+  padding: 80px 0;
+  background: $main-bg;
+
+
+
+}
+.news-post {
+  margin-top: 50px;
+  .main-post {
+    @include display-flex;
+    .post-info {
+      margin-right: 15px;
+      li {
+        margin-bottom: 20px;
+      }
+    }
+    h3 {
+      margin-top: 30px;
+    }
+  }
+}
+
+.resent {
+  margin-bottom: 30px;
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  .text {
+    margin-top: 20px;
+  }
+}
+.big-date {
+  display: block;
+  text-align: right;
+  font-size: 30px;
+  font-weight: 700;
+}
+.small-date {
+  color: $brand-color;
+  text-transform: uppercase;
+}
+.post-content {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.main-post {
+  @media (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,86 @@
+.posts {
+  padding: 80px 0;
+  .head {
+    margin-bottom: 50px;
+  }
+  .btn {
+    display: block;
+    float: right;
+    margin-top: -50px;
+    @media(max-width: 400px) {
+      margin-top: 20px;
+      float: none;
+      display: inline-block;
+    }
+  }
+}
+.post {
+  margin-bottom: 50px;
+  @include display-flex;
+  @include align-items(flex-start);
+  @media (max-width: 750px){
+    @include flex-direction(column);
+    @include justify-content(center);
+  }
+
+
+  .author-img {
+    margin-right: 20px;
+    @include border-radius(100%);
+    overflow: hidden;
+    @media (max-width: 750px){
+     margin-bottom: 20px;
+
+    }
+  }
+  .post-content {
+    width: 85%;
+    .text {
+      margin-top: 20px;
+    }
+    h3 {
+      a {
+        color: $primary-color;
+        text-decoration: none;
+      }
+    }
+
+  }
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+  h3 {
+    margin-bottom: 15px;
+  }
+}
+.uptolike-buttons {
+  margin-top: 20px;
+  display: inline-block !important;
+  float: left;
+}
+.uptl_container {
+  display: inline-block !important;
+}
+.pagination {
+  @include display-flex;
+  @include justify-content(center);
+
+  .page-numbers {
+    margin-right: 5px;
+    padding: 10px;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    text-decoration: none;
+  }
+
+  .curent {
+    color: $primary-color;
+    border: 1px solid $brand-color;
+
+  }
+}
+
+

@@ -1,0 +1,35 @@
+.main-nav {
+  width: 60%;
+  @include display-flex;
+  @include justify-content(flex-end);
+  @media (min-width: 768px)and(max-width: 991px) {
+    width: 100%;
+  }
+}
+.menu-list {
+  width: 100%;
+  @include display-flex;
+  @include justify-content(space-between);
+
+  li {
+    &:hover {
+      a {
+        color: $brand-color;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $tertiary-color;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+.menu-btn {
+  background: transparent;
+  border: none;
+}
+i.fa-align-justify {
+  font-size: 20px;
+  color: $tertiary-color;
+}

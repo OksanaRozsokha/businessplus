@@ -1,0 +1,95 @@
+.main-footer {
+  padding: 40px 0;
+  background: $footer-color;
+}
+.footer-social {
+  margin-top: 40px;
+  @include display-flex;
+  a {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid $secondary-color;
+    @include display-flex;
+    @include justify-content(center);
+    @include align-items(center);
+    text-decoration: none;
+  }
+  i.fa {
+    color: $tertiary-color;
+  }
+}
+.foot-nav {
+  margin-top: 20px;
+}
+
+.foot-menu {
+  ul {
+    li {
+      width: 50%;
+      padding: 10px 0;
+      border-bottom: 1px solid #373839;
+      &:hover {
+        border-color: $brand-color;
+        a {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+  a {
+    @include open-sans(14px, 400);
+    text-transform: uppercase;
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+
+form {
+  margin-top: 20px;
+}
+
+.name-input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #373839;
+  @include open-sans(14px, 400);
+  color: $secondary-color;
+  background: transparent;
+  outline: none;
+}
+.email-input {
+  @extend .name-input;
+  border-left: none;
+}
+.comment-area {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #373839;
+  background: transparent;
+  color: $secondary-color;
+  resize: none;
+  outline: none;
+}
+.wpcf_nd_submit {
+  display: block;
+  text-decoration: none;
+  @include raleway(13px, 700);
+  color: $brand-color;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  background: none;
+  border: 2px solid $brand-color;
+  cursor: pointer;
+  outline: none;
+}
+.wpcf-nd-thank-you {
+  color: $tertiary-color;
+}
+.footer-menu {
+  @media (max-width: 767px) {
+    margin: 50px 0;
+  }
+}

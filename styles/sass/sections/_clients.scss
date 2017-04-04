@@ -1,0 +1,21 @@
+.our-clients {
+  padding: 80px 0;
+}
+.owl-carousel {
+  margin-top: 50px;
+  .owl-item  {
+    img {
+      display: block;
+      width: auto;
+      float: left;
+      margin-right: 30px;
+    }
+  }
+}
+.client-info {
+  overflow: hidden;
+  margin-top: 25px;
+  .client-info {
+    margin-top: 50px;
+  }
+}

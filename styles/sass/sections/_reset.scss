@@ -1,0 +1,16 @@
+body {
+  @include open-sans(14px, 400);
+}
+h2 {
+  margin-bottom: 10px;
+}
+.share-btn {
+  @include display-flex;
+  @include align-items(center);
+  margin-top: 30px;
+
+  .text {
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+}
